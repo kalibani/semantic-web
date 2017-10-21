@@ -15,11 +15,22 @@ body, html {height: 100%}
     background-size: cover;
 }
 </style>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+</script>
+<script>
+  $("#submit-btn").click(function(){
+    $("#contact").hide()
+    alert(`Thanks, I'll Text You Back Immediately`)
+  })
+</script>
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-middle w3-jumbo">
-    <img src="https://www.shareicon.net/data/512x512/2016/07/08/117367_logo_512x512.png">
+    <img src="https://www.shareicon.net/data/512x512/2016/07/08/117367_logo_512x512.png" alt="logo">
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Greetings</button></p>
@@ -92,28 +103,16 @@ body, html {height: 100%}
     </div>
     <div class="w3-container">
       <p>Ask Me Anything Here :</p>
-      <form action="" id="form-act" target="_blank">
+      <form action="#" id="form-act" target="_blank">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Needed" required name="Needed"></p>
         <h5>Meet me at :</h5>
-        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Meet me at" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" required name="date" value="2017-11-16T20:00"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
         <p><button class="w3-button" id="submit-btn" type="submit">SEND MESSAGE</button></p>
       </form>
     </div>
   </div>
 </div>
-
 </body>
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous">
-  </script>
-  <script>
-    $("#submit-btn").click(function(){
-      $("#contact").hide()
-      alert(`Thanks, I'll Text You Back Immediately`)
-    })
-  </script>
 </html>
