@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>MY PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://www.translatemedia.com/wp-content/uploads/2016/11/shutterstock_432008905.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <img src="https://www.shareicon.net/data/512x512/2016/07/08/117367_logo_512x512.png">
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Greetings</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Find Me</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">I'm Alive every monday - friday 10-23</p>
+    <p class="w3-large">Warm and Creative City, Bandung</p>
+    <p>powered by : My Hands</p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Journey of life</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Bachelor of Computer Science <b>10%</b></h5>
+      <h5>Coding Bootcamp <b>20%</b></h5>
+      <h5>Learning by Doing <b>70%</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Skills</h1>
+    </div>
+    <div class="w3-container">
+      <p class="w3-wide">Front-end</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide">Back-end</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div>
+      <p class="w3-wide">Data Scientist</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+    <button class="w3-button w3-light-black w3-padding-large w3-section">
+      <i class="fa fa-download"></i><b>Download Resume</b>
+    </button>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Ask Me Anything Here :</p>
+      <form action="" id="form-act" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Needed" required name="Needed"></p>
+        <h5>Meet me at :</h5>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Meet me at" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" id="submit-btn" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    $("#submit-btn").click(function(){
+      $("#contact").hide()
+      alert(`Thanks, I'll Text You Back Immediately`)
+    })
+  </script>
+</html>
